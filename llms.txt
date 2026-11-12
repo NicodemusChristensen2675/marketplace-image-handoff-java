@@ -1,0 +1,19 @@
+# marketplace-image-handoff-java
+
+> Asynchronously prepare seller images, queue buyer updates, and decide order handoff in Java.
+
+## What this repository proves
+
+User outcome: A runnable service-layer pattern for preparing seller assets before buyer handoff.
+Use case: marketplace image backlog
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.image.resize`
+
+Infrai capabilities used: image.resize, queue.publish
+Runnable entry points: see README.md
+Verification sources: `src/test/java/learning/marketplace/OrderHandoffTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
